@@ -1,16 +1,5 @@
 # mango_online
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+基于 flutter 开发的静态项目，练手。
+对于一些错误应如何处理。
+使用了 video_player(官方视频播放) 和 extended_nested_scroll_view(首页Tab，跟随页面滚动) 插件
