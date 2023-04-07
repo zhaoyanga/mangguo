@@ -110,27 +110,30 @@ class _UserPageState extends State<UserPage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: buyHouses.asMap().keys.map((e) {
-          return InkWell(
-            onTap: () {},
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 21),
-              decoration: e != buyHouses.length - 1
-                  ? const BoxDecoration(
-                      border: Border(
-                        right: BorderSide(width: 1, color: Color(0xffE6E6E8)),
-                      ),
-                    )
-                  : const BoxDecoration(),
-              child: Row(
-                children: [
-                  Image.asset(
-                    buyHouses[e]['img'],
-                    width: 20,
-                    height: 20,
-                  ),
-                  const SizedBox(width: 6),
-                  Text(buyHouses[e]['name']),
-                ],
+          return Expanded(
+            flex: 1,
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                decoration: e != buyHouses.length - 1
+                    ? const BoxDecoration(
+                        border: Border(
+                          right: BorderSide(width: 1, color: Color(0xffE6E6E8)),
+                        ),
+                      )
+                    : const BoxDecoration(),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      buyHouses[e]['img'],
+                      width: 20,
+                      height: 20,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(buyHouses[e]['name']),
+                  ],
+                ),
               ),
             ),
           );

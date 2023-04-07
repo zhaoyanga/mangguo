@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'common/assetImages.dart';
 import 'common/bottom_button.dart';
 import 'pages/home/index.dart';
+import 'pages/video/index.dart';
 import 'pages/message/index.dart';
 import 'pages/follow-with-interest/index.dart';
 import 'pages/user/index.dart';
@@ -64,7 +65,7 @@ class _MyAppPage extends State<MyAppPage> {
 
   List<Widget> homePageList = [
     const HomePage(),
-    const HomePage(),
+    const VideoPage(),
     const MessagePage(),
     const FollowWithInterest(),
     const UserPage(),

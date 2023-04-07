@@ -6,17 +6,26 @@ class Toast {
     OverlayEntry overlayEntry = OverlayEntry(builder: (context) {
       //外层使用Positioned进行定位，控制在Overlay中的位置
       return Positioned(
-          top: MediaQuery.of(context).size.height * 0.7,
+          top: MediaQuery.of(context).size.height * 0.4,
+          // top: 70,
           child: Material(
+            color: Colors.transparent,
             child: Container(
               width: MediaQuery.of(context).size.width,
+              color: Colors.transparent,
               alignment: Alignment.center,
               child: Center(
-                child: Card(
-                  color: Colors.grey,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8),
-                    child: Text(message),
+                child: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(6),
+                    color: const Color(0xffB9B9BD),
+                  ),
+                  child: Text(
+                    message,
+                    style: const TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),

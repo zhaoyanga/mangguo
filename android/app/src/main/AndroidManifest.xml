@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mango_online">
+    package="com.example.mango_online" >
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="mango_online"
         android:name="${applicationName}"
