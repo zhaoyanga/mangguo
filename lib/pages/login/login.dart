@@ -30,12 +30,12 @@ class _LoginPageState extends State<LoginPage> {
   // 手机号验证
   final Map phoneRule = {
     "isShow": false,
-    "message": "",
+    "message": "请输入手机号",
   };
   // 验证么验证
   final Map codeRule = {
     "isShow": false,
-    "message": "",
+    "message": "请输入验证码",
   };
   // 复选框同意
   bool checkChange = false;

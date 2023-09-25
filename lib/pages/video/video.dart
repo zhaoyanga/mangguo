@@ -120,11 +120,11 @@ class _VideoState extends State<Video> {
                       },
                       // 拖动结束
                       onChangeEnd: (value) {
-                        setState(() {
-                          isDrag = false;
-                        });
+                        isDrag = false;
                         _slidervalue = value;
                         _controller.seekTo(_controller.value.duration * value);
+                        _controller.play();
+                        isPlay = false;
                         setState(() {});
                       },
                       min: 0,
